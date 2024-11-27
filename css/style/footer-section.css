@@ -1,0 +1,116 @@
+.footer {
+    background-color: #191919;
+    color: #b9b9b9;
+}
+
+.footer .container .foot-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .container .foot-container .foot-box {
+    width: calc((100% / 4) - 50px);
+}
+
+.footer .container .foot-container .foot-box:first-of-type {
+    padding-top: 40px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type span {
+    padding: 10px 20px;
+    background-color: #313131;
+    margin-right: 5px;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+
+.footer .container .foot-container .foot-box:first-of-type p {
+    line-height: 2;
+}
+
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box {
+    padding-top: 60px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box li {
+    border-bottom: 1px solid #b9b9b9;
+    padding: 10px 0px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box li:last-of-type {
+    border: none;
+
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box li a {
+    color: #b9b9b9;
+    position: relative;
+}
+
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box li a span {
+    margin-right: 5px;
+    color: var(--main-color);
+
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box+.foot-box {
+    padding-top: 60px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box+.foot-box ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer .container .foot-container .foot-box:first-of-type+.foot-box+.foot-box ul li span {
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.footer .container .foot-container .foot-box:last-of-type {
+    padding-top: 70px;
+}
+
+.footer .container .foot-container .foot-box:last-of-type .box-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .container .foot-container .foot-box:last-of-type .box-images .img {
+    width: calc((100% / 3) - 8px);
+    height: 70px;
+    background-color: white;
+    padding: 3px;
+}
+
+.footer .container .foot-container .foot-box:last-of-type .box-images img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer .foot-close {
+    border-top: 1px solid #b9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    padding: 20px 0px;
+}

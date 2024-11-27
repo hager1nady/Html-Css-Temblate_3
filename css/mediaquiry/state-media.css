@@ -1,0 +1,31 @@
+@media(max-width:767px) {
+    .state .state-content .state-info .state-box {
+        width: calc((100%));
+    }
+}
+
+@media(min-width:768px) {
+    .state .state-content .state-info .state-box {
+        width: calc((100% / 2) - 20px);
+    }
+}
+
+@media(min-width:991px) {
+    .state .container {
+        width: 100%;
+    }
+
+    .state .state-content .state-info .state-box {
+        width: calc((100% / 3) - 20px);
+    }
+}
+
+@media(min-width:1200px) {
+    .state .container {
+        width: 100%;
+    }
+
+    .state .state-content .state-info .state-box {
+        width: calc((100% / 4) - 20px);
+    }
+}

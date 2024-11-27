@@ -1,0 +1,23 @@
+@media(max-width:767px) {
+    .articles .container .art-content .cards {
+        width: calc((100%) - 40px);
+    }
+}
+
+@media(min-width:768px) {
+    .articles .container .art-content .cards {
+        width: calc((100% /2) - 40px);
+    }
+}
+
+@media (min-width: 991px) {
+    .articles .container .art-content .cards {
+        width: calc((100% /3) - 40px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .articles .container .art-content .cards {
+        width: calc((100% / 4) - 40px);
+    }
+}

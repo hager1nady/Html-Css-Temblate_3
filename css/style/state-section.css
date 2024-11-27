@@ -1,0 +1,102 @@
+.state {
+    background-image: url('../../images/stats.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 80px 0px;
+}
+
+.state::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 95%);
+    z-index: -1;
+}
+
+.state .state-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.state .container .state-content .state-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.state .state-content .state-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.state .state-content .state-info .state-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 100px;
+    position: relative;
+}
+
+.state .state-content .state-info .state-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 2px;
+    height: 0px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.state .state-content .state-info .state-box:hover::before {
+    height: 100%;
+}
+
+.state .state-content .state-info .state-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-color);
+    width: 2px;
+    height: 0px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.state .state-content .state-info .state-box:hover::after {
+    height: 100%;
+}
+
+.state .state-content .state-info .state-box>span:first-of-type {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.state .state-content .state-info .state-box span:first-of-type+span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.state .state-content .state-info .state-box span:last-of-type {
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}

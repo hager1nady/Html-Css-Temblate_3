@@ -1,0 +1,51 @@
+.ourskills {
+    padding: var(--main-paddin);
+}
+
+.ourskills .skills {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ourskills .container .skills .image {
+    width: calc(100% / 2);
+}
+
+.ourskills .container .skills .image img {
+    width: 90%;
+}
+
+.ourskills .container .skills .progs {
+    width: calc(100% / 2);
+}
+
+.ourskills .container .skills .progs .prog-holder h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+
+.ourskills .container .skills .progs .prog-holder .prog {
+    background-color: var(--section-bg-color);
+    margin-bottom: 15px;
+    height: 30px;
+    position: relative;
+}
+
+.ourskills .container .skills .progs .prog-holder .prog span {
+    background-color: var(--main-color);
+    display: block;
+    height: 100%;
+}
+
+.ourskills .container .skills .progs .prog-holder .prog::before {
+    content: attr(data-progress);
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background-color: white;
+    border: 1px solid var(--section-bg-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    padding: 0px 5px;
+}

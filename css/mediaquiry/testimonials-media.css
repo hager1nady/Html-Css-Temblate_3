@@ -1,0 +1,17 @@
+@media(max-width:767px) {
+    .testimonials .container .test-cards .card {
+        width: calc((100%) - 40px);
+    }
+}
+
+@media(min-width:768px) {
+    .testimonials .container .test-cards .card {
+        width: calc((100% /2) - 40px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials .container .test-cards .card {
+        width: calc((100% / 3) - 40px);
+    }
+}

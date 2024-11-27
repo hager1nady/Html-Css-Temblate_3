@@ -1,0 +1,74 @@
+.video {
+    padding-bottom: var(--main-padding);
+}
+
+.container .video-content {
+    display: flex;
+}
+
+.video .container .video-content .video-info {
+    width: 28%;
+    /* padding: 0px 20px; */
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.video .container .video-content .video-info .video-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding: var(--second-padding);
+}
+
+.video .container .video-content .video-info .video-top h3 {
+    font-size: 18px;
+}
+
+.video .container .video-content .video-info .video-top span {
+    font-size: 18px;
+}
+
+.video .container .video-content .video-info .video-field {
+    padding: var(--second-padding);
+    border-top: 1px solid var(--border-color);
+}
+
+.video .container .video-content .video-info .video-field p a {
+    color: black;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.video .container .video-content .video-info .video-field:hover p a {
+    color: var(--main-color);
+}
+
+.video .container .video-content .video-info .video-field>p:last-of-type {
+    color: var(--paragraph-color);
+}
+
+
+
+
+.video .container .video-content .video-image {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--section-bg-color);
+    padding: 12px;
+}
+
+.video .container .video-content .video-image .image img {
+    width: 100%;
+}
+
+.video .container .video-content .video-image .video-close {
+    background-color: white;
+    padding: 15px;
+}

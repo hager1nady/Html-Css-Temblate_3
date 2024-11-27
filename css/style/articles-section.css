@@ -1,0 +1,95 @@
+.articles .container .art-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.articles .container .art-content .cards {
+    width: calc((100% / 4) - 40px);
+    border-radius: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.articles .container .art-content .cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 12px 20px 0px;
+    animation: go-top-down 0.3s linear forwards;
+    -webkit-animation: go-top-down 0.3s linear forwards;
+}
+
+@keyframes go-top-down {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -10px;
+    }
+
+}
+
+.articles .container .art-content .cards img {
+    width: 100%;
+}
+
+.articles .container .art-content .cards h3 {
+    font-size: 20px;
+    padding: 20px 25px;
+}
+
+.articles .container .art-content .cards p {
+    color: var(--paragraph-color);
+    padding: 0px 0px 25px 25px;
+    line-height: 1.5;
+
+}
+
+.articles .container .art-content .cards>div {
+    border-top: 1px solid rgb(230, 230, 231);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles .container .art-content .cards button {
+    border: none;
+    background: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.articles .container .art-content .cards span {
+    color: var(--main-color);
+}
+
+.articles .container .art-content .cards:hover span {
+    position: relative;
+    animation: go-left 1s linear infinite;
+    -webkit-animation: go-left 1s linear infinite;
+}
+
+@keyframes go-left {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0;
+    }
+
+
+}

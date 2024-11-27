@@ -1,0 +1,121 @@
+.discount {
+    display: flex;
+}
+
+.discount .discount-offer {
+    width: 50%;
+    text-align: center;
+    /* background-color: var(--ulter-main-color); */
+    background-image: url('../../images/discount.jpg');
+    padding: 100px 130px 0px 130px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.discount .discount-offer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1786e0f7;
+    z-index: -1;
+}
+
+.discount .discount-offer h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.discount .discount-offer p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.discount .discount-offer img {
+    width: 290px;
+    margin-top: 30px;
+}
+
+.discount .discount-request {
+    width: 50%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.discount .discount-request h2 {
+    font-size: 39px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.discount .discount-request .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount .discount-request .form form input {
+    width: 40%;
+    padding: var(--second-padding);
+    background-color: var(--second-bg-color);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--paragraph-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.discount .discount-request .form form input::placeholder {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.discount .discount-request .form form input:focus {
+    outline: none;
+}
+
+.discount .discount-request .form form textarea {
+    padding: var(--second-padding);
+    width: 40%;
+    background-color: var(--second-bg-color);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--paragraph-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 22px;
+}
+
+.discount .discount-request .form form textarea::placeholder {
+    font-size: 16px;
+}
+
+.discount .discount-request .form form textarea:focus {
+    outline: none;
+}
+
+.discount .discount-request .form form input:last-of-type {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border: none;
+}
+
+.discount .discount-request .form form input:last-of-type:hover {
+    background-color: var(--ulter-main-color);
+    cursor: pointer;
+}

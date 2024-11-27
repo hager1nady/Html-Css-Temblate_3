@@ -1,0 +1,9 @@
+@media(max-width:991px) {
+    .ourskills .container .skills .image {
+        display: none;
+    }
+}
+
+.ourskills .container .skills .progs {
+    width: calc(100%);
+}

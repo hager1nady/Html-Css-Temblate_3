@@ -1,0 +1,37 @@
+@media(max-width:767px) {
+    
+    .header .container .logo {
+        width: 100%;
+        height: 50px;
+    }
+
+    .header .container .links>ul>li>a {
+        padding: 8px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .header .links {
+        width: 100%;
+    }
+
+    .header .container .links>ul>li {
+        margin: auto;
+    }
+
+    .header .mega-menu {
+        flex-direction: column;
+        gap: 0;
+        padding: 5px;
+    }
+}
+
+@media(max-width:991px) {
+    .header .mega-menu .mega-img {
+        display: none;
+    }
+
+    .header .mega-menu .mega-links {
+        flex: 1;
+    }
+}

@@ -1,0 +1,123 @@
+/* @media(max-width:991px) {
+    .pricing .container {
+        width: 80%;
+    }
+    .pricing .container .pricing-box {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .pricing .container>.pricing-box:first-of-type+.pricing-box {
+        position: relative;
+        top: 0px;
+    }
+
+    .pricing .dots-down {
+        top: 80%;
+    }
+
+    .pricing .dots-up {
+        top: 12%;
+        right: 0;
+
+    }
+} */
+
+@media(max-width:767px) {
+    .pricing .container {
+        width: 100%;
+    }
+
+    .pricing .container .pricing-box {
+        width: calc((100%));
+    }
+
+    .pricing .container>.pricing-box:first-of-type+.pricing-box {
+        position: relative;
+        top: 0px;
+    }
+
+    .pricing .dots-down {
+        top: 85%;
+    }
+
+    .pricing .dots-up {
+        top: 9%;
+        right: 0;
+
+    }
+}
+
+@media(min-width:768px) {
+    .pricing .container {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pricing .container .pricing-box {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .pricing .container>.pricing-box:first-of-type+.pricing-box {
+        position: relative;
+        top: 0px;
+    }
+
+    .pricing .dots-down {
+        top: 80%;
+    }
+
+    .pricing .dots-up {
+        top: 12%;
+        right: 0;
+    }
+}
+
+@media(min-width:991px) {
+    .pricing .container {
+        width: 95%;
+    }
+
+    .pricing .container .pricing-box {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .pricing .container>.pricing-box:first-of-type+.pricing-box {
+        position: relative;
+        top: 0px;
+    }
+
+    .pricing .dots-down {
+        top: 80%;
+    }
+
+    .pricing .dots-up {
+        top: 12%;
+        right: 0;
+    }
+}
+
+
+@media(min-width:1200px) {
+    .pricing .container {
+        width: 79%;
+    }
+
+    .pricing .container .pricing-box {
+        width: calc((100% / 3) - 20px);
+    }
+
+    .pricing .container>.pricing-box:first-of-type+.pricing-box {
+        position: relative;
+        top: 0px;
+    }
+
+    .pricing .dots-down {
+        top: 80%;
+    }
+
+    .pricing .dots-up {
+        top: 22%;
+        right: 0;
+    }
+}

@@ -1,0 +1,16 @@
+:root {
+    --main-color: #2196F3;
+    --section-bg-color: #ececec;
+    --ulter-main-color: #1787e0;
+    --main-transition: 0.3s;
+    --paragraph-color: #666666b7;
+    --hover-color: #ececec63;
+    --border-color: #e9e6e6;
+    --first-color: rgb(244, 63, 54);
+    --second-color: rgba(3, 169, 244, 0.6);
+    --third-color: rgba(0, 150, 136, 0.6);
+    --icon-star-color: rgb(255, 193, 7);
+    --main-padding: 120px;
+    --second-padding: 15px 30px;
+    --second-bg-color:#f4f4f4;
+}

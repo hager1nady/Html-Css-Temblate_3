@@ -1,0 +1,105 @@
+.testimonials {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 1px;
+    background-color: var(--section-bg-color);
+    margin-bottom: 50px;
+}
+
+.testimonials .container .test-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.testimonials .container .test-cards .card {
+    width: calc((100% / 3) - 40px);
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+}
+
+.testimonials .container .test-cards .card .card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    right: -10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid var(--section-bg-color);
+}
+
+.testimonials .container .test-cards .card .card-img img {
+    width: 100%;
+}
+
+.testimonials .container .test-cards .card h4 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.testimonials .container .test-cards .card p {
+    text-transform: capitalize;
+    color: var(--paragraph-color);
+    line-height: 1.5;
+}
+
+.testimonials .container .test-cards .card p:last-of-type {
+    width: 300px;
+}
+
+.testimonials .container .test-cards .card .icons {
+    margin: 10px 0px;
+}
+
+.testimonials .container .test-cards>.card:first-of-type .icons span:not(:last-child) {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card .icons span:not(:last-child) {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card .icons span:not(:last-child) {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card .icons span {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card .icons>span:first-child {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card .icons>span:first-child +span {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card .icons>span:first-child +span +span {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card+.card .icons>span:first-child {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card+.card .icons>span:first-child +span {
+    color: var(--icon-star-color);
+}
+
+.testimonials .container .test-cards>.card:first-of-type+.card+.card+.card+.card+.card .icons>span:first-child +span +span {
+    color: var(--icon-star-color);
+}

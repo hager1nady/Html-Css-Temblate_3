@@ -1,0 +1,84 @@
+@media(max-width:767px) {
+    .discount {
+        flex-direction: column;
+    }
+
+    .discount .discount-offer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .discount .discount-offer h2 {
+        font-size: 40px;
+    }
+
+    .discount .discount-request {
+        width: 100%;
+    }
+
+    .discount .discount-request .form form input {
+        width: 80%;
+    }
+
+    .discount .discount-request .form form textarea {
+        width: 80%;
+    }
+}
+
+@media(min-width:768px) {
+    .discount {
+        flex-direction: column;
+    }
+
+    .discount .discount-offer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .discount .discount-offer h2 {
+        font-size: 40px;
+    }
+
+    .discount .discount-request {
+        width: 100%;
+    }
+
+    .discount .discount-request .form form input {
+        width: 310px;
+    }
+
+    .discount .discount-request .form form textarea {
+        width: 310px;
+    }
+}
+
+@media(min-width:992px) {
+    .discount {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .discount .discount-offer {
+        width: 50%;
+    }
+
+    .discount .discount-request {
+        width: 50%;
+    }
+
+    .discount .discount-request .form form input {
+        width: 310px;
+    }
+
+    .discount .discount-request .form form textarea {
+        width: 310px;
+    }
+}

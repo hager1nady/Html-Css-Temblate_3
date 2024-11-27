@@ -1,0 +1,17 @@
+@media(max-width:767px) {
+    .services .container .services-content .card {
+        width: calc((100%));
+    }
+}
+
+@media(min-width:768px) {
+    .services .container .services-content .card {
+        width: calc((100% /2) - 30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .services .container .services-content .card {
+        width: calc((100% / 3) - 30px);
+    }
+}

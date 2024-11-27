@@ -1,0 +1,163 @@
+.pricing {
+    padding-top: 20px;
+    position: relative;
+    background-color: var(--section-bg-color);
+    padding-bottom: var(--main-padding);
+}
+
+.pricing .dots-up {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 190px;
+    height: 180px;
+    background-image: url('../../images/dots.png');
+}
+
+.pricing .dots-down {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 190px;
+    height: 180px;
+    background-image: url('../../images/dots.png');
+}
+
+.pricing .container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing .container .pricing-box {
+    width: calc((100% / 3) - 30px);
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.199);
+    position: relative;
+    z-index: 2;
+}
+
+.pricing .container .pricing-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 50%;
+    background-color: var(--section-bg-color);
+    z-index: -1;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.pricing .container .pricing-box:hover::before {
+    width: 100%;
+}
+
+.pricing .container .pricing-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 50%;
+    background-color: var(--section-bg-color);
+    z-index: -1;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.pricing .container .pricing-box:hover::after {
+    width: 100%;
+}
+
+.pricing .container .pricing-box .title {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.pricing .container .pricing-box .img {
+    width: 80px;
+    margin: auto;
+}
+
+.pricing .container .pricing-box .img img {
+    width: 100%;
+}
+
+.pricing .container .pricing-box h4 {
+    font-size: 50px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.pricing .container .pricing-box>p {
+    text-transform: capitalize;
+    color: var(--paragraph-color);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.pricing .container .pricing-box .fields .field {
+    padding: 15px 30px;
+    border-top: 1px solid var(--section-bg-color);
+}
+
+.pricing .container .pricing-box .fields .field>span:first-of-type {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.pricing .container .pricing-box .fields .field>span:first-of-type+span {
+    font-size: 20px;
+}
+
+.pricing .container .pricing-box .price-foot {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing .container .pricing-box button {
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.pricing .container .pricing-box button:hover {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.pricing .container>.pricing-box:first-of-type+.pricing-box {
+    position: relative;
+    top: -20px;
+}
